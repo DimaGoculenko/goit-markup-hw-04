@@ -1,0 +1,337 @@
+:root {
+    --primary-text-color: #4D5AE5;
+    --primary-fon-color: #FFFFFF;
+    --color-section-logo: #F4F4FD;
+    --color-body-text: #2E2F42;
+    --color-footer-text: #E7E9FC;
+    --color-mail-tel-p-text: #434455;
+    --color-active: rgba(77, 90, 229, 0.2);
+    --color-border: #F4F4FD;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-body-text);
+    background-color: var(--primary-fon-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body-text);
+}
+
+/* hover/:focus/:active */
+a:hover,
+a:focus {
+    color: var(--primary-text-color);
+}
+
+a:active {
+    color: var(--color-active);
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+/*------------header-------------*/
+.header {
+    border-bottom: 0.5px outset var(--color-border);
+}
+
+.nav-contact {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* логотип */
+.logo-header {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-right: 77px;
+}
+
+/* цвет логотипа Web */
+span {
+    color: var(--primary-text-color);
+}
+
+/* ссылки на страницы */
+.link-navigation {
+    margin-right: 40px;
+}
+
+li:last-child {
+    margin-right: 0px;
+}
+
+/* подсветка текушей страницы */
+.nav-corrent { color: var(--primary-text-color)} 
+
+/* contact меил и телефон */
+.contact {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-mail {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.contact-tel {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+}
+
+
+/*----------main для index.html----------*/
+.section-block {
+    background-color: var(--color-body-text);
+    padding-top: 192px;
+    padding-bottom: 192px;
+    /* background-image: linear-gradient(blue, yellow); */
+    /* background-image: url(../images/people-office\ 1.jpg); */
+}
+
+/* заголовок H1 */
+.title {
+    color: var(--primary-fon-color);
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* кнопка  */
+button {
+    background-color: var(--primary-text-color);
+    color: var(--primary-fon-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--color-section-logo);
+    color: var(--primary-text-color);
+}
+
+.button-main {
+    display: block;
+    /* margin-top: 48px; */
+    margin-right: auto;
+    margin-left: auto;
+    width: 170px;
+    height: 51px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* < !-- Section 1 --> */
+.section1 {
+    padding-top: 120px;
+}
+
+.feature-list {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 24px;
+    height: 104px;
+    width: 264px;
+}
+
+.feature-list:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+/* slogan --- p */
+.slogan-section1 {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* < !-- Section 2 --> */
+.section2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.link-section2 {
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* text H2 */
+.title-text-2 {
+    margin-bottom: 72px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+/* < !-- Section 3 --> */
+.section3 {
+    text-align: center;
+    background-color: var(--color-section-logo);
+    height: 732px;
+    padding-top: 120px;
+}
+
+/* text H2 */
+.title-text-3 {
+    margin-bottom: 72px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.list-photo {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    border: 0.5px outset var(--color-border);
+    background-color: var(--primary-fon-color);
+}
+
+.list-photo :last-child {
+    margin-right: 0;
+}
+
+.name-slogan {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* H3 -- name */
+.name {
+    margin-bottom: 8px;
+}
+
+.slogan-section3 {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    line-height: 24px;
+    width: 264px;
+}
+
+/*-------------footer------------*/
+.footer {
+    background-color: var(--color-body-text);
+    height: 310px;
+}
+
+/* логотип */
+.logo-footer {
+    color: var(--color-section-logo);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.text-footer {
+    color: var(--color-footer-text);
+    line-height: 24px;
+    padding-top: 16px;
+    width: 264px;
+}
+
+
+/*--------main для portfolio.html----------*/
+/* Filters - кнопки button  */
+.button-filters {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
+.portfolio-link {
+    border: 1px solid var(--color-footer-text);
+    border-radius: 4px;
+    /* margin-left: 24px; */
+}
+
+li .portfolio-link {
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+}
+
+.li-button {
+    margin-right: 24px;
+}
+
+/* < !-- Section --> */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-bottom: 120px;
+}
+
+.list {
+    margin-bottom: 48px;
+    list-style-type: none;
+    border: 0.5px outset var(--color-border);
+}
+
+.list:nth-last-child(-n + 3) {
+    margin: 0;
+}
+
+/* H3 ---- subtitle */
+.subtitle {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+/* slogan --- p */
+.slogan {
+    color: var(--color-mail-tel-p-text);
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    
+}
