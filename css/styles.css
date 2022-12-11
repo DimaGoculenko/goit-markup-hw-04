@@ -120,8 +120,11 @@ li:last-child {
     background-color: var(--color-body-text);
     padding-top: 192px;
     padding-bottom: 192px;
-    /* background-image: linear-gradient(blue, yellow); */
     background-image: url(../images/people-office\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.25)
+    ); */
 }
 
 /* заголовок H1 */
@@ -149,7 +152,6 @@ button:focus {
 
 .button-main {
     display: block;
-    /* margin-top: 48px; */
     margin-right: auto;
     margin-left: auto;
     width: 170px;
@@ -165,11 +167,38 @@ button:focus {
 
 .feature-list {
     list-style-type: none;
-    display: inline-block;
+    display: block;
     margin-right: 24px;
     height: 104px;
-    width: 264px;
 }
+
+.feature-list::before {
+    display: inline-block;
+    content:'';
+    height: 112px;
+    width: 264px;
+    background-color: var(--color-border);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna-1.png);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock-1.png);
+
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram-1.png);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut-1.png);
+}
+
 
 .feature-list:last-child {
     padding-right: 0;
