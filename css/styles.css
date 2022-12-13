@@ -107,20 +107,32 @@ li:last-child {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
     margin-right: 40px;
+    margin-left: 10px;
 }
+
+.icon-contect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-fon-color);
+}
+
 
 .contact-tel {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
+    margin-left: 10px;
 }
-
 
 /*----------main для index.html----------*/
 .section-block {
     background-color: var(--color-body-text);
     padding-top: 192px;
     padding-bottom: 192px;
-    background-image: url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)),
+    url(../images/people-office\ 1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,8 +295,8 @@ button:focus {
 .section-customers {
     height: 202px;
     margin-top: 120px;
-    /* padding-bottom: 120px; */
-    background-color: darkcyan;
+    margin-bottom: 120px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
@@ -292,7 +304,7 @@ button:focus {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    background-color: coral;
+    height: 42px;
     margin-bottom: 72px;
 }
 
@@ -303,15 +315,25 @@ button:focus {
 }
 
 .item-customers {
+    display: flex;
     height: 88px;
+    width: 168px;
     margin-right: 24px;
-    background-color: crimson;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.icon-customers {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 16px;
 }
 
 
 /*-------------footer------------*/
 .footer {
-    margin-top: 120px;
     background-color: var(--color-body-text);
     height: 310px;
 }
@@ -335,6 +357,38 @@ button:focus {
     width: 264px;
 }
 
+/* Social */
+.social {
+    display: block;
+    width: 208px;
+    height: 80px;
+    font-weight: 600;
+    /* margin-top: 100px; */
+    /* margin-left: 120px; */
+    /* margin-right: 692px; */
+    background-color: rgb(13, 228, 67);
+}
+
+.social-text {
+    width: 96px;
+    height: 24px;
+    color: var(--primary-fon-color);
+    background-color: cyan;
+}
+
+.social-icon {
+    width: 208px;
+    height: 40px;
+    margin-top: 16px;
+    background-color: firebrick;
+}
+
+.social-link {
+    width: 40px;
+    background-color: deeppink;
+    margin-right: 16px;
+}
+
 
 /*--------main для portfolio.html----------*/
 /* Filters - кнопки button  */
@@ -348,7 +402,6 @@ button:focus {
 .portfolio-link {
     border: 1px solid var(--color-footer-text);
     border-radius: 4px;
-    /* margin-left: 24px; */
 }
 
 li .portfolio-link {
@@ -393,6 +446,5 @@ li .portfolio-link {
     font-weight: 400;
     line-height: 24px;
     margin-left: 16px;
-    margin-bottom: 32px;
-    
+    margin-bottom: 32px; 
 }
