@@ -254,7 +254,7 @@ button:focus {
 .section3 {
     text-align: center;
     background-color: var(--color-section-logo);
-    height: 732px;
+    height: 788px;
     padding-top: 120px;
 }
 
@@ -293,6 +293,31 @@ button:focus {
     font-weight: 400;
     line-height: 24px;
     width: 264px;
+}
+
+/* social-section3 */
+.social-icon-section3 {
+    width: 232px;
+    height: 48px;
+    margin-top: 8px;
+}
+
+.social-section3 {
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 24px;
+    border-radius: 50%;
+    margin-top: 4px;
+    padding-bottom: 32px;
+    background-color: var(--primary-text-color);
+}
+
+.social-section3:hover {
+    background-color: var(--color-green-footer);
+}
+
+.icon-section3 {
+    margin-top: 13.5px;
 }
 
 /* < !-- Section Customers --> */
@@ -404,7 +429,6 @@ button:focus {
 .icon-link {
     margin-top: 8px;
     margin-left: 8px;
-
 }
 
 
