@@ -7,6 +7,8 @@
     --color-mail-tel-p-text: #434455;
     --color-active: rgba(77, 90, 229, 0.2);
     --color-border: #F4F4FD;
+    --color-company: #8E8F99;
+    --color-green-footer: #31D0AA;
 }
 
 body {
@@ -329,11 +331,15 @@ button:focus {
     margin-bottom: 16px;
 }
 
+.icon-customers:hover {
+    background-color: var(--primary-text-color);
+}
 
 /*-------------footer------------*/
 .footer {
     background-color: var(--color-body-text);
     height: 310px;
+    display: flex;
 }
 
 /* логотип */
@@ -344,7 +350,7 @@ button:focus {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     margin-top: 100px;
 }
 
@@ -357,34 +363,42 @@ button:focus {
 
 /* Social */
 .social {
-    display: block;
+    /* display: block; */
     width: 208px;
     height: 80px;
     font-weight: 600;
-    /* margin-top: 100px; */
-    /* margin-left: 120px; */
-    /* margin-right: 692px; */
-    background-color: rgb(13, 228, 67);
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 692px;
 }
 
 .social-text {
     width: 96px;
     height: 24px;
     color: var(--primary-fon-color);
-    background-color: cyan;
 }
 
 .social-icon {
     width: 208px;
     height: 40px;
     margin-top: 16px;
-    background-color: firebrick;
 }
 
 .social-link {
     width: 40px;
-    background-color: deeppink;
+    background-color: rgba(255, 255, 255, 0.1);
     margin-right: 16px;
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    background-color: var(--color-green-footer);
+}
+
+.icon-link {
+    margin-top: 8px;
+    margin-left: 8px;
+
 }
 
 
