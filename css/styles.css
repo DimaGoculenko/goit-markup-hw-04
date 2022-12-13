@@ -117,6 +117,11 @@ li:last-child {
     align-items: center;
     width: 20px;
     height: 20px;
+    fill: var(--color-mail-tel-p-text);
+}
+
+.icon-contect:hover {
+    fill: var(--primary-text-color);
 }
 
 
@@ -319,7 +324,7 @@ button:focus {
     height: 88px;
     width: 168px;
     margin-right: 24px;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--color-company);
     border-radius: 4px;
 }
 
@@ -329,10 +334,11 @@ button:focus {
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 16px;
+    fill: var(--color-company);
 }
 
 .icon-customers:hover {
-    background-color: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
 
 /*-------------footer------------*/
