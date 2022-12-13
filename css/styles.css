@@ -272,6 +272,8 @@ button:focus {
     margin-right: 24px;
     border: 0.5px outset var(--color-border);
     background-color: var(--primary-fon-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .list-photo :last-child {
@@ -341,7 +343,7 @@ button:focus {
 .customers {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .item-customers {
@@ -351,6 +353,7 @@ button:focus {
     margin-right: 24px;
     border: 1px solid var(--color-company);
     border-radius: 4px;
+    
 }
 
 .icon-customers {
@@ -469,6 +472,7 @@ li .portfolio-link {
     margin-bottom: 48px;
     list-style-type: none;
     border: 0.5px outset var(--color-border);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .list:nth-last-child(-n + 3) {
