@@ -186,7 +186,6 @@ button:focus {
     list-style-type: none;
     display: block;
     margin-right: 24px;
-    height: 104px;
 }
 
 .feature-list::before {
@@ -194,6 +193,7 @@ button:focus {
     content:'';
     height: 112px;
     width: 264px;
+    height: 104px;
     background-color: var(--color-border);
     background-repeat: no-repeat;
     background-position: center;
@@ -233,13 +233,17 @@ button:focus {
 .section2 {
     margin-top: 120px;
     padding-bottom: 120px;
-    
 }
 
 .link-section2 {
     list-style-type: none;
     display: flex;
     justify-content:space-between;
+}
+
+.link-section2-image {
+    height: 300px;
+    border: 1px solid var(--color-footer-text);
 }
 
 /* text H2 */
@@ -288,6 +292,7 @@ button:focus {
 /* H3 -- name */
 .name {
     margin-bottom: 8px;
+    
 }
 
 .slogan-section3 {
@@ -299,13 +304,13 @@ button:focus {
 
 /* social-section3 */
 .social-icon-section3 {
-    width: 232px;
-    height: 48px;
+    display: flex;
     margin-top: 8px;
 }
 
 .social-section3 {
     width: 40px;
+    height: 40px;
     background-color: rgba(255, 255, 255, 0.1);
     margin-right: 24px;
     border-radius: 50%;
