@@ -287,19 +287,23 @@ button:focus {
 .name-slogan {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.name-slogan:last-child {
+    padding-right: 0;
 }
 
 /* H3 -- name */
 .name {
     margin-bottom: 8px;
-    
 }
 
 .slogan-section3 {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
     line-height: 24px;
-    width: 264px;
 }
 
 /* social-section3 */
@@ -324,7 +328,11 @@ button:focus {
 }
 
 .icon-section3 {
-    margin-top: 13.5px;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
 }
 
 /* < !-- Section Customers --> */
@@ -358,7 +366,6 @@ button:focus {
     margin-right: 24px;
     border: 1px solid var(--color-company);
     border-radius: 4px;
-    
 }
 
 .icon-customers {
@@ -372,6 +379,10 @@ button:focus {
 
 .icon-customers:hover {
     fill: var(--primary-text-color);
+}
+
+.item-customers:hover {
+    border: 1px solid var(--primary-text-color);
 }
 
 /*-------------footer------------*/
@@ -447,6 +458,20 @@ button:focus {
     justify-content: center;
     padding-top: 96px;
     padding-bottom: 72px;
+}
+
+
+.li-button:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+.list:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link {
