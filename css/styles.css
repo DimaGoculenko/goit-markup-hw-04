@@ -347,7 +347,6 @@ button:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
 .title-text-customers {
     font-size: 36px;
     font-weight: 700;
@@ -364,23 +363,23 @@ button:focus {
 
 .item-customers {
     display: flex;
-    height: 88px;
     width: 168px;
-    margin-right: 24px;
+    height: 88px;
     border: 1px solid var(--color-company);
     border-radius: 4px;
+    fill: var(--color-company);
 }
 
 .icon-customers {
-    display: flex;
+    width: 104px;
+    height: 56px;
     margin-top: 16px;
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 16px;
-    fill: var(--color-company);
 }
 
-.icon-customers:hover {
+.item-customers:hover {
     fill: var(--primary-text-color);
 }
 
@@ -432,31 +431,28 @@ button:focus {
 }
 
 .social-icon {
-    width: 208px;
-    height: 40px;
+    display: flex;
     margin-top: 16px;
 }
 
 .social-link {
     width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     margin-right: 16px;
-    border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus{
     background-color: var(--color-green-footer);
 }
 
-
 .icon-link {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* display: block; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-top: 8px;
-    margin-left: 8px;
+
 }
 
 
