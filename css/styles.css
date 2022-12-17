@@ -13,12 +13,12 @@
 
 body {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-body-text);
     background-color: var(--primary-fon-color);
+    /* font-style: normal;
+    font-weight: 700; */
 }
 
 * {
@@ -101,34 +101,33 @@ li:last-child {
 /* contact меил и телефон */
 .contact {
     list-style-type: none;
-    display: flex;
     margin-left: auto;
+}
+
+.qqq {
+    display: flex;
+}
+
+.qqq:hover {
+    fill: var(--primary-text-color);
+}
+
+.icon-contect {
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .contact-mail {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
     margin-right: 40px;
-    margin-left: 10px;
 }
-
-.icon-contect {
-    display: flex;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    fill: var(--color-mail-tel-p-text);
-}
-
-.icon-contect:hover {
-    fill: var(--primary-text-color);
-}
-
 
 .contact-tel {
     color: var(--color-mail-tel-p-text);
     font-weight: 400;
-    margin-left: 10px;
 }
 
 /*----------main для index.html----------*/
@@ -145,11 +144,14 @@ li:last-child {
 
 /* заголовок H1 */
 .title {
-    color: var(--primary-fon-color);
+    width: 492px;
     font-size: 56px;
     line-height: 60px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 48px;
+    color: var(--primary-fon-color);
 }
 
 /* кнопка  */
