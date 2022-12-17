@@ -104,11 +104,11 @@ li:last-child {
     margin-left: auto;
 }
 
-.qqq {
+.contact-list {
     display: flex;
 }
 
-.qqq:hover {
+.contact-list:hover {
     fill: var(--primary-text-color);
 }
 
